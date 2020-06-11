@@ -81,6 +81,23 @@ a{
     transition: 1.5s;
 }
 
+#nxt-btn-disabled{
+    background-color: #333;
+    font-style: italic;
+    margin-top: 0.5em;
+    padding: 1em;
+    width: 100%;
+    place-items: center;
+    border-radius: 2em;
+    border-style: none;
+    font-size: 1.3em;
+    color: cornsilk;
+    box-shadow: 3px 3px 5px 1px rgb(104, 105, 105);
+}
+
+#loading-div{
+    transform: translate(50%, 0%);
+}
 
 /* media-queries */
 @media(min-width: 740px){
