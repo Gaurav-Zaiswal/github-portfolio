@@ -35,13 +35,13 @@ window.onload = function (){
 
     function fetchRepo(event){
 
-    fetch("https://api.github.com/users/gaurav-zaiswal/repos")
+    fetch(`https://api.github.com/users/gaurav-zaiswal/repos?page=${page_number}&per_page=6`)
     .then(response => response.json())
     .then(function(data){
         console.log(data);
 
         //selectors
-    const repoContainer = document.querySelector('.right-or-down');
+    const repoContainer = document.querySelector('.repo-parent');
 
     //events
 

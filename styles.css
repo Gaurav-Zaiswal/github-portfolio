@@ -1,12 +1,12 @@
 body{
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 2em 0;
     font-family: 'Montserrat', sans-serif;
     /* line-height: 0.5; */
 }
 
-p,h4,h2,h5,h1{
+p,h4,h5,h1{
     margin:0.5em;
 }
 
@@ -35,7 +35,7 @@ a{
     padding: 1em 0;
 }
 
-#container .right-or-down{
+#container .repo-parent{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,6 +62,25 @@ a{
     transition: 1s;
 }
 
+#nxt-btn{
+    margin-top: 0.5em;
+    padding: 1em;
+    width: 100%;
+    place-items: center;
+    border-radius: 2em;
+    background-color: rgb(99, 210, 238);
+    border-style: none;
+    font-size: 1.3em;
+    color: cornsilk;
+    box-shadow: 3px 3px 5px 1px rgb(104, 105, 105);
+    cursor: pointer;
+}
+
+#nxt-btn:hover{
+    background-color: rgb(87, 190, 216);
+    transition: 1.5s;
+}
+
 
 /* media-queries */
 @media(min-width: 740px){
@@ -77,14 +96,20 @@ a{
         place-items: center;
     }
     
-    #container .right-or-down{
+    #right-or-down{
         grid-column: 3/5;
-        place-items: center;
+        /* place-items: center; */
         padding: 0 1em;
         /* padding: 0; */
     }
 
-    #repo-card-desc{
-        
+    .repo-card{
+        grid-column: 3/5;
+        width: 100%;
+        border-radius: 2em;
+        height: auto;
+        padding: 1em;
+        margin: 0.5em 0;
+        box-shadow: 3px 3px 5px 1px #ccc;
     }
 }
